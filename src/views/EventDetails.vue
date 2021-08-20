@@ -12,7 +12,8 @@ import EventService from '@/services/EventService.js'
 export default {
     data() {
         return {
-            event: null
+            event: null,
+            id: 123
         }
     },
 

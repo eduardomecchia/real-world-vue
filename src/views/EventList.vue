@@ -26,7 +26,7 @@ export default {
     const api = "https://my-json-server.typicode.com/eduardomecchia/real-world-vue-db/events";
     axios.get(api)
       .then(response => {
-        console.log(response);
+        this.events = response.data;
       })
       .catch(error => {
         console.error(error)

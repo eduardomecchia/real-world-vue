@@ -24,7 +24,13 @@ export default {
 
   created() {
     const api = "https://my-json-server.typicode.com/eduardomecchia/real-world-vue-db/events";
-    axios.get(api);
+    axios.get(api)
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.error(error)
+      });
   }
 }
 </script>
